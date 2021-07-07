@@ -8,7 +8,7 @@ def homepage():
     return render_template('index.html')
 
 
-@app.route('/main', methods=['GET', 'POST'])
+@app.route('/main/', methods=['GET', 'POST'])
 def mainpage():
     if request.method == "POST":
         enteredPassword = request.form['password']
